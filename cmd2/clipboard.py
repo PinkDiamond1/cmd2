@@ -12,6 +12,7 @@ import pyperclip  # type: ignore[import]
 
 # Can we access the clipboard?  Should always be true on Windows and Mac, but only sometimes on Linux
 # noinspection PyBroadException
+'''
 try:
     # Try getting the contents of the clipboard
     _ = pyperclip.paste()
@@ -25,7 +26,8 @@ except Exception:
     can_clip = False
 else:
     can_clip = True
-
+'''
+can_clip = False
 
 def get_paste_buffer() -> str:
     """Get the contents of the clipboard / paste buffer.
